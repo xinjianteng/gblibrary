@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gblibrary/page/home/home_page.dart';
 import 'package:gblibrary/res/colors.dart';
 import 'package:gblibrary/res/dimens.dart';
+import 'package:gblibrary/utils/text_utils.dart';
 import 'package:scoped_model/scoped_model.dart';
 
 //首页菜单控件
@@ -30,16 +31,9 @@ class HomeMenu extends StatelessWidget {
                             : imgPathNormal,
                         height: ScreenUtil().setHeight(GDimens.menuImgSize),
                       ),
-                      Text(
-                        title,
-                        style: TextStyle(
-                          fontSize: ScreenUtil().setSp(GDimens.menuTextSize,
-                              allowFontScalingSelf: true),
-                          color: model.current == homeMenuPosition
-                              ? GColors.menu_text_sel
-                              : GColors.menu_text_nor,
-                        ),
-                      ),
+                      TextUtils().menuText(title,model.current == homeMenuPosition
+                          ? GColors.menu_text_sel
+                          : GColors.menu_text_nor),
                     ],
                   ),
                   onTap: () {
@@ -47,6 +41,6 @@ class HomeMenu extends StatelessWidget {
                   },
                 ),
               ),
-            ));
+            ),);
   }
 }
