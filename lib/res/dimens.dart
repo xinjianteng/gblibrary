@@ -8,11 +8,11 @@ class GDimens {
 
   static const double menuHeight=172.8;
 
-  static const double menuTextSize=34.56;
-  static const double menuImgSize=90.0;
+  static const double menuTextSize=29.0;
+  static const double menuImgSize=80.64;
 
-  static const double menuBigSize=144.0;
-  static const double elevation=10.0;
+  static const double menuBigSize=172.8;
+  static const double elevation=0.0;
 
 
 

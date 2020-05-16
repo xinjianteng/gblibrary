@@ -15,7 +15,7 @@ import 'package:gblibrary/utils/navigator_utils.dart';
 
 class HomePage extends StatelessWidget {
   static const String ROUTER_NAME = "/HomePage";
-
+  
   @override
   Widget build(BuildContext context) {
     return HomePageHome();
@@ -35,62 +35,54 @@ class _HomePageHomeState extends State<HomePageHome> {
     FindPage(),
     MyPage(),
   ];
-
+  
   @override
   Widget build(BuildContext context) {
     return ScopedModel(
       model: HomeModel(),
       child: ScopedModelDescendant<HomeModel>(
-        builder: (context, _, model) => Scaffold(
-          body: pages[model.current],
-          floatingActionButton: FloatingActionButton(
-            backgroundColor: GColors.theme_color_dark,
-            onPressed: () {
-              NavigatorUtils().startPageForName(context, HomePage.ROUTER_NAME);
-            },
-            tooltip: '发布',
-            child: Image.asset(
-              GImgs.menu_send,
-              width: ScreenUtil().setWidth(GDimens.menuBigSize),
-              height: ScreenUtil().setWidth(GDimens.menuBigSize),
+        builder: (context, _, model) =>
+            Scaffold(
+              body: pages[model.current],
+              bottomNavigationBar: BottomAppBar(
+                color: Colors.white,
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    HomeMenu(
+                        0,
+                        res.shelf,
+                        GImgs.menu_shelf_normal,
+                        GImgs.menu_shelf
+                    ),
+                    HomeMenu(
+                        1,
+                        res.looking,
+                        GImgs.menu_looking_normal,
+                        GImgs.menu_looking
+                    ),
+                    Image.asset(
+                      GImgs.menu_send,
+                      height: ScreenUtil().setHeight(GDimens.menuHeight),
+                    ),
+                    HomeMenu(
+                        2,
+                        res.find,
+                        GImgs.menu_find_normal,
+                        GImgs.menu_find
+                    ),
+                    HomeMenu(
+                        3,
+                        res.my,
+                        GImgs.menu_my_normal,
+                        GImgs.menu_my
+                    ),
+                  ],
+                ),
+              ),
             ),
-          ),
-          bottomNavigationBar: BottomAppBar(
-            notchMargin: 0,
-            elevation: 0,
-            color: Colors.white,
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: <Widget>[
-                HomeMenu(
-                  0,
-                  res.shelf,
-                  GImgs.menu_shelf_normal,
-                  GImgs.menu_shelf
-                ),
-                HomeMenu(
-                  1,
-                  res.looking,
-                  GImgs.menu_looking_normal,
-                  GImgs.menu_looking
-                ),
-                HomeMenu(
-                  2,
-                  res.find,
-                  GImgs.menu_find_normal,
-                  GImgs.menu_find
-                ),
-                HomeMenu(
-                  3,
-                  res.my,
-                  GImgs.menu_my_normal,
-                  GImgs.menu_my
-                ),
-              ],
-            ),
-          ),
-        ),
       ),
     );
   }
@@ -98,10 +90,10 @@ class _HomePageHomeState extends State<HomePageHome> {
 
 class HomeModel extends Model {
   int _current = 0;
-
+  
   int get current => _current;
-
-
+  
+  
   void setCurrent(int homeMenuPosition) {
     _current = homeMenuPosition;
     notifyListeners();

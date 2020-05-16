@@ -20,26 +20,23 @@ class HomeMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScopedModelDescendant<HomeModel>(
         builder: (context, _, model) => Container(
+              alignment: Alignment.center,
               height: ScreenUtil().setHeight(GDimens.menuHeight),
-              child: Center(
-                child: GestureDetector(
-                  child: Column(
-                    children: <Widget>[
-                      Image.asset(
-                        model.current == homeMenuPosition
-                            ? imgPath
-                            : imgPathNormal,
-                        height: ScreenUtil().setHeight(GDimens.menuImgSize),
-                      ),
-                      TextUtils().menuText(title,model.current == homeMenuPosition
-                          ? GColors.menu_text_sel
-                          : GColors.menu_text_nor),
-                    ],
-                  ),
-                  onTap: () {
-                    model.setCurrent(homeMenuPosition);
-                  },
+              child: GestureDetector(
+                child: Column(
+                  children: <Widget>[
+                    Image.asset(
+                      model.current == homeMenuPosition ? imgPath : imgPathNormal,
+                      height: ScreenUtil().setHeight(GDimens.menuImgSize),
+                    ),
+                    TextUtils().menuText(title,model.current == homeMenuPosition
+                        ? GColors.menu_text_sel
+                        : GColors.menu_text_nor),
+                  ],
                 ),
+                onTap: () {
+                  model.setCurrent(homeMenuPosition);
+                },
               ),
             ),);
   }
