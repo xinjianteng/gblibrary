@@ -34,6 +34,9 @@ class StringsZh extends BaseStrings{
   // TODO: implement search
   String get search => "搜索";
 
+  @override
+  get login=>'登录';
+
 
 
 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/screenutil.dart';
+import 'package:gblibrary/page/common/login_page.dart';
 import 'package:gblibrary/page/home/home_page.dart';
 import 'package:gblibrary/res/dimens.dart';
 import 'package:gblibrary/res/strings.dart';
@@ -34,7 +35,7 @@ class _UiAdapterState extends State<UiAdapter> {
         width: GDimens.ui_width,
         height: GDimens.ui_height,
         allowFontScaling: true);
-    return HomePage();
+    return LoginPage();
   }
 }
 

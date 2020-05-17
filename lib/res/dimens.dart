@@ -13,6 +13,8 @@ class GDimens {
 
   static const double menuBigSize=172.8;
   static const double elevation=0.0;
+  
+  static const double common_margin=46.0;
 
 
 

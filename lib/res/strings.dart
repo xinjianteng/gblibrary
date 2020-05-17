@@ -6,6 +6,8 @@ Strings _res = StringsZh();
 Strings get res => _res;
 
 abstract class Strings {
+  get login;
+
   get appName;
 
   get find;

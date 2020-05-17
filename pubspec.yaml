@@ -29,6 +29,9 @@ dependencies:
 
   scoped_model: ^1.0.1
 
+  # https://github:com/peng8350/flutter_pulltorefresh:  刷新
+  pull_to_refresh: ^1.5.7
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

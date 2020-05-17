@@ -6,10 +6,10 @@ import 'package:gblibrary/res/dimens.dart';
 
 class StyleUtils {
 
-  TextStyle menuStyle(Color col){
+  TextStyle hintTextStyle(){
     return TextStyle(
       fontSize: ScreenUtil().setSp(GDimens.titleSize,allowFontScalingSelf: true),
-      color: col
+      color: Colors.black12
     );
   }
 
