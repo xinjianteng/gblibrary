@@ -21,7 +21,7 @@ class _LookingPageHomeState extends State<LookingPageHome> {
     return Container(
       alignment: Alignment.center,
       child: Text(
-        res.looking,
+        GStrings.looking,
         style: TextStyle(color: Colors.red, fontSize: 25),
       ),
     );

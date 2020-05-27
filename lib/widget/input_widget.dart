@@ -55,7 +55,6 @@ class InputWidget{
               hintStyle: StyleUtils().hintTextStyle(),
             ),
           ),
-          
         ],
       )
     );

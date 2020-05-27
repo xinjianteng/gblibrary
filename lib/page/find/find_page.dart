@@ -21,7 +21,7 @@ class _FindPageHomeState extends State<FindPageHome> {
     return Container(
       alignment: Alignment.center,
       child: Text(
-        res.find,
+        GStrings.find,
         style: TextStyle(color: Colors.red, fontSize: 25),
       ),
     );

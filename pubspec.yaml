@@ -25,12 +25,16 @@ dependencies:
   cupertino_icons: ^0.1.2
 
   # 屏幕适配
-  flutter_screenutil: ^1.0.2
+  flutter_screenutil: ^1.1.0
 
   scoped_model: ^1.0.1
 
   # https://github:com/peng8350/flutter_pulltorefresh:  刷新
   pull_to_refresh: ^1.5.7
+
+  dio: 3.0.9 #latest version
+
+  rxdart: ^0.24.1
 
 dev_dependencies:
   flutter_test:
@@ -48,12 +52,12 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
-    - images/tab_bookcase_sel.png
-    - images/tab_bookcase_nor.png
-    - images/tab_seek_sel.png
-    - images/tab_seek_nor.png
-    - images/tab_discover_nor.png
-    - images/tab_discover_nor.png
-    - images/tab_profile_sel.png
-    - images/tab_profile_nor.png
-    - images/tab_add.png
+    - assets/images/tab_bookcase_sel.png
+    - assets/images/tab_bookcase_nor.png
+    - assets/images/tab_seek_sel.png
+    - assets/images/tab_seek_nor.png
+    - assets/images/tab_discover_nor.png
+    - assets/images/tab_discover_nor.png
+    - assets/images/tab_profile_sel.png
+    - assets/images/tab_profile_nor.png
+    - assets/images/tab_add.png

@@ -4,13 +4,13 @@ import 'package:gblibrary/page/looking/looking_page.dart';
 import 'package:gblibrary/page/my/my_page.dart';
 import 'package:gblibrary/page/shelf/shelf_page.dart';
 import 'package:gblibrary/res/colors.dart';
+import 'package:gblibrary/utils/utils.dart';
 import 'package:scoped_model/scoped_model.dart';
 import 'package:flutter_screenutil/screenutil.dart';
 import 'package:gblibrary/page/home/widge/home_menu.dart';
 import 'package:gblibrary/res/dimens.dart';
 import 'package:gblibrary/res/imgs.dart';
 import 'package:gblibrary/res/strings.dart';
-import 'package:gblibrary/utils/navigator_utils.dart';
 
 
 class HomePage extends StatelessWidget {
@@ -47,37 +47,37 @@ class _HomePageHomeState extends State<HomePageHome> {
               bottomNavigationBar: BottomAppBar(
                 color: Colors.white,
                 child: Row(
-                  mainAxisSize: MainAxisSize.max,
+                  mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     HomeMenu(
-                        0,
-                        res.shelf,
-                        GImgs.menu_shelf_normal,
-                        GImgs.menu_shelf
+                      0,
+                      GStrings.shelf,
+                      Utils.getImgPath(GImgs.menu_shelf_normal),
+                      Utils.getImgPath(GImgs.menu_shelf),
                     ),
                     HomeMenu(
-                        1,
-                        res.looking,
-                        GImgs.menu_looking_normal,
-                        GImgs.menu_looking
+                      1,
+                      GStrings.looking,
+                      Utils.getImgPath(GImgs.menu_looking_normal),
+                      Utils.getImgPath(GImgs.menu_looking),
                     ),
                     Image.asset(
-                      GImgs.menu_send,
+                      Utils.getImgPath(GImgs.menu_send),
                       height: ScreenUtil().setHeight(GDimens.menuHeight),
                     ),
                     HomeMenu(
-                        2,
-                        res.find,
-                        GImgs.menu_find_normal,
-                        GImgs.menu_find
+                      2,
+                      GStrings.find,
+                      Utils.getImgPath(GImgs.menu_find_normal),
+                      Utils.getImgPath(GImgs.menu_find),
                     ),
                     HomeMenu(
-                        3,
-                        res.my,
-                        GImgs.menu_my_normal,
-                        GImgs.menu_my
+                      3,
+                      GStrings.my,
+                      Utils.getImgPath(GImgs.menu_my_normal),
+                      Utils.getImgPath(GImgs.menu_my),
                     ),
                   ],
                 ),

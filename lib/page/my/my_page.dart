@@ -21,7 +21,7 @@ class _MyPageHomeState extends State<MyPageHome> {
     return Container(
       alignment: Alignment.center,
       child: Text(
-        res.my,
+        GStrings.my,
         style: TextStyle(color: Colors.red, fontSize: 25),
       ),
     );

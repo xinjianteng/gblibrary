@@ -3,6 +3,19 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 class GColors {
+  static const Color app_main = Color(0xFF21342B);
+  static const Color app_bg = Color(0xfffefef9);
+  static const Color divider = Color(0xffE7E7E7);
+  static const Color app_btn = Color(0xff527E69);
+  static const Color app_btn_tv = Color(0xffF5C265);
+  
+  
+  static const Color app_jump = Color(0x66000000);
+  
+  static const Color transparent_80 = Color(0x80000000);
+  static const Color white_19 = Color(0X19FFFFFF);
+  
+  
   static const Color theme_color = Color(0xFF499DFF);
   static const Color theme_color_light = Color(0xFF61DBFB);
   static const Color theme_color_dark = Color(0xFF4B9CFF);

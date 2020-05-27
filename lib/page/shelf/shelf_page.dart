@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gblibrary/res/colors.dart';
 import 'package:gblibrary/res/strings.dart';
 
 class ShelfPage extends StatelessWidget {
@@ -21,8 +22,8 @@ class _ShelfPageHomeState extends State<ShelfPageHome> {
     return Container(
       alignment: Alignment.center,
       child: Text(
-        res.shelf,
-        style: TextStyle(color: Colors.red, fontSize: 25),
+        GStrings.shelf,
+        style: TextStyle(color: GColors.theme_color, fontSize: 25),
       ),
     );
   }
