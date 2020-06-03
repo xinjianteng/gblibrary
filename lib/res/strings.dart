@@ -1,6 +1,7 @@
 class GStrings {
     
     static const String appName = "藏书馆Flutter";
+    static const String appTip = "给你主宰自己的力量";
     static const String shelf = "书架";
     static const String looking = "找书";
     static const String find = "发现";

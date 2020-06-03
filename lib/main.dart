@@ -53,7 +53,7 @@ class _UiAdapterState extends State<UiAdapter> {
             width: GDimens.ui_width,
             height: GDimens.ui_height,
             allowFontScaling: true);
-      return SplashPage();
+      return SplashPageHome();
    }
    
    void _initListener() {

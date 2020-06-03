@@ -1,4 +1,4 @@
-class GImgs {
+class Imgs {
     static const String menu_shelf = 'tab_bookcase_sel';
     static const String menu_shelf_normal = 'tab_bookcase_nor.png';
     
@@ -18,6 +18,18 @@ class GImgs {
     
     static const String ic_search = 'ic_search.png';
     static const String ic_search_close = 'ic_search_close.png';
+
+    static const String splash_bg_0_3 = 'splash_time_0_3.jpg';
+    static const String splash_bg_3_5 = 'splash_time_3_5.jpg';
+    static const String splash_bg_5_10 = 'splash_time_5_10.jpg';
+    static const String splash_bg_10_14 = 'splash_time_10_14.jpg';
+    static const String splash_bg_14_17 = 'splash_time_14_17.jpg';
+    static const String splash_bg_17_20 = 'splash_time_17_20.jpg';
+    static const String splash_bg_20_00 = 'splash_time_20_00.jpg';
+    static const String logo = 'ic_launcher.png';
+
+
+
     
     
 }

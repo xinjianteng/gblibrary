@@ -15,17 +15,10 @@ class Decorations {
     ),
     boxShadow: [
       BoxShadow(
-        color: Color(0xffff0000),
+        color: GColors.app_btn,
         offset: Offset(2.0, 3.0),
         blurRadius: 6.0, /*,spreadRadius:2.0*/
       ),
     ],
-    gradient: LinearGradient(
-      colors: [
-        Color(0xff00ff00),
-        Color(0xffffffff),
-        Color(0xff00ff00),
-      ],
-    ),
   );
 }
