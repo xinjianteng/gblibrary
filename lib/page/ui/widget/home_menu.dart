@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:gblibrary/page/home/home_page.dart';
+import 'package:gblibrary/page/ui/page/home_page.dart';
 import 'package:gblibrary/res/colors.dart';
 import 'package:gblibrary/res/dimens.dart';
 import 'package:gblibrary/utils/text_widget.dart';

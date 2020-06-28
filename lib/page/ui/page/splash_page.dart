@@ -1,18 +1,14 @@
-import 'dart:math';
 
 import 'package:flustars/flustars.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:gblibrary/page/home/home_page.dart';
 import 'package:gblibrary/res/colors.dart';
+import 'package:gblibrary/res/dimens.dart';
 import 'package:gblibrary/res/imgs.dart';
 import 'package:gblibrary/res/strings.dart';
-import 'package:gblibrary/res/styles.dart';
-import 'package:gblibrary/utils/edgeInset_utils.dart';
-import 'package:gblibrary/utils/route_util.dart';
-import 'package:gblibrary/utils/text_widget.dart';
 import 'package:gblibrary/utils/utils.dart';
 import 'package:gblibrary/widget/btn_widget.dart';
+
 
 class SplashPage extends StatelessWidget {
   static const String ROUTER_NAME = "/splash";
@@ -72,6 +68,12 @@ class _SplashPageHomeState extends State<SplashPageHome> {
               ),
             ),
           ),
+          Offstage(
+            offstage: false,
+            child: Container(
+              height: ScreenUtil().setHeight(GDimens.menuImgSize),
+            ),
+          ),
         ],
       ),
     );
@@ -109,7 +111,7 @@ class _SplashPageHomeState extends State<SplashPageHome> {
   }
 
   void _goMain() {
-    RouteUtil.pushReplacementNamed(context, HomePage.ROUTER_NAME);
+//    RouteUtil.pushReplacementNamed(context, HomePage.ROUTER_NAME);
   }
 
   String getSplashBg() {

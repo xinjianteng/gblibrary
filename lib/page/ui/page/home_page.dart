@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:gblibrary/page/find/find_page.dart';
-import 'package:gblibrary/page/looking/looking_page.dart';
-import 'package:gblibrary/page/my/my_page.dart';
-import 'package:gblibrary/page/shelf/shelf_page.dart';
-import 'package:gblibrary/res/colors.dart';
-import 'package:gblibrary/utils/utils.dart';
-import 'package:scoped_model/scoped_model.dart';
 import 'package:flutter_screenutil/screenutil.dart';
-import 'package:gblibrary/page/home/widge/home_menu.dart';
+import 'package:gblibrary/page/find/find_page.dart';
+import 'package:gblibrary/page/ui/page/shelf_page.dart';
 import 'package:gblibrary/res/dimens.dart';
 import 'package:gblibrary/res/imgs.dart';
 import 'package:gblibrary/res/strings.dart';
+import 'package:gblibrary/utils/utils.dart';
+import 'package:scoped_model/scoped_model.dart';
+
+import 'file:///F:/flutter_work/gblibrary/gblibrary/lib/page/ui/widget/home_menu.dart';
+
+import 'looking_page.dart';
+import 'my_page.dart';
 
 
 class HomePage extends StatelessWidget {
